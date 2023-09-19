@@ -1,0 +1,27 @@
+정밀도(Precision) : 암이(P)라고 예측 --> 실제 암
+                         TP / (TP+FP) : FP
+                         FP: 예측 암 --> 실제 정상
+		스팸메일분류기, 
+재현률(Recall)     : 실제 암(P)         --> 암이(P)라고 예측
+                         TP / (TP+FN) : FN
+                         FN: 실제 암 --> 예측 정상
+		암환자예측, 화재감지, 범죄탐지
+
+가설 & 검정
+귀무가설 : 일반적사실 
+대립가설 : 검정하고자 하는 사실
+	1종오류 : 귀무가설이 참인데 아니라고 주장 (실제로 참인데 귀무가설을 기각)
+		False Positive(FP) : 알파에러 = Type1 에러
+		실제 음성(N)인데 --> 양성(P)으로 예측 실수
+
+	2종오류 : 귀무가설이 거짓인데 맞다고 주장 (실제로 거짓인데 귀무가설을 채택)
+		False Negative(FN) : 베타에러 = Type2 에러
+		실제 양성(P)인데 --> 음성(N)으로 예측 실수
+
+
+Specificity(특이도) = TN/ (TN + FP)
+특이도는 True Negative Rate(TNR) 로 부르기도 한다.
+실제로 정상인데 예측이 정상
+
+X축 : False Positive Rate(FPR) = 1 - 특이도 	FP/ (TN+FP) 
+Y축 : True Positive Rate(TPR) = 재현률		TP/ (FN+TP)
